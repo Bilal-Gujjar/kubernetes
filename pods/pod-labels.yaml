@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: labeled-pods
+  labels:
+    creation-check: manger
+    eco: start
+spec:
+  containers:
+  - image: aamirpinger/flag
+    name: add-label
+    ports:
+    - containerPort: 80
+      
+
